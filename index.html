@@ -1,30 +1,37 @@
 <!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="utf-8"/>
-    <title>iniciar sesion</title>
-</head>
-
-    <body>
-        <div id="contenedor">
-            <form id="miFormulario">
-
-                <label>Nombre:</label><br />
-                <input type="text" id="itNombre" class="campo" /> <br/>
-                <div id="mensaje1" class="errores"> Dame tu nombre</div>
-                <label>Contraseña</label><br />
-                <input type="text" id="itContraseña" class="campo" /> <br/>
-                <div id="mensaje2" class="errores"> Dame tu nombre</div>
-
-                <input type="submit" id="bLogin" value="Login" class="Login" />
-      
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Eventos</title>
 
 
 
-            </form>
-        </div>
+  </head>
+  <body>
 
-    </body>
 
+<div class="" id="clic" style="width:5000px; height:300px;" onclick="clicks()">
+  <input type="text" id="contadorClic" value="">
+</div>
+<div class="" id="move" style="solid;width:5000px; height:300px;" onmousemove="cursor()">
+  <input type="text" id="contadorcursor" value="">
+</div>
+
+<script type="text/javascript">
+    var contadorClic=0;
+    var contarCursor=0;
+    function clicks() {
+      contadorClic=contadorClic+1;
+      document.getElementById('contadorClic').value = contadorClic;
+
+    }
+    function cursor() {
+      contarCursor=contarCursor+1;
+      document.getElementById('contadorcursor').value = contarCursor;
+
+    }
+
+    </script>
+
+  </body>
 </html>
